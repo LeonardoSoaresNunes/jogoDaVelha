@@ -2,6 +2,10 @@
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.state{
+    text-align: center;
 }
 
 .pecas{
@@ -9,4 +13,5 @@ h1{
     height: 100px;
     background-color: beige;
     border: 1px solid gray;
+    display: inline-block;
 }
