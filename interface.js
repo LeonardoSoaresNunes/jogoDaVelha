@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleClick(event){
         console.log(event.target);
 
+
         let pecas = event.target;
         let position = pecas.id;
 
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let symbol = board[position];
 
             if(symbol != ''){
-                pecas.innerHTML = <div class='${symbol}'></div>
+                pecas.innerHTML = '<div class="${symbol}"></div>'
             }
         })
     }

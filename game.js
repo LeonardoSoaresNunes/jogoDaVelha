@@ -1,9 +1,10 @@
-//Iniciar as variaveis 
+
 
 
 let board = ['','','','','','','','',''];
 let playerTime = 0;
-let symbols = ['o' , 'x'];
+let symbols = ['play1' , 'play2'];
+
 
 function handleMove(position){
 
