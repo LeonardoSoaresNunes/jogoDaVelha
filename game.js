@@ -6,6 +6,8 @@ let playerTime = 0;
 let symbols = ['0' , 'x'];
 
 function handleMove(position){
+
+    if (board[position] == ''){
     board[position] = symbols[playerTime];
 
     if (playerTime == 0){
