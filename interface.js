@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     function handleClick(event){
-        //console.log(event.target);
+        console.log(event.target);
 
         let pecas = event.target;
         let position = pecas.id;
