@@ -22,13 +22,18 @@ function handleMove(position){
 
         if(gameOver == false){
 
+          /*
+          Esse Codigo Resume , A mesma coisa do if  e else abaixo deixa o codigo mais simples.
+            playerTime = (playerTime == 0)?1:0
+          */
+
         if (playerTime == 0){
             playerTime = 1;
         }else{
             playerTime = 0;
         }
 
-     }
+        }
     }
 
     gameOver;
