@@ -5,11 +5,20 @@ let board = ['','','','','','','','',''];
 let playerTime = 0;
 let symbols = ['play1' , 'play2'];
 
+let gameOver = false;
+
+
 
 function handleMove(position){
 
+    if (gameOver){
+        return;
+    }
+
     if (board[position] == ''){
     board[position] = symbols[playerTime];
+
+        gameOver = isWin();
 
         if (playerTime == 0){
             playerTime = 1;
@@ -17,4 +26,8 @@ function handleMove(position){
             playerTime = 0;
       }
     }
+}
+
+function isWin(){
+    
 }
