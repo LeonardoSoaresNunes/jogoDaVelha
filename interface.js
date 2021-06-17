@@ -12,7 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let pecas = event.target;
         let position = pecas.id;
 
-        handleMove(position);
+        if (handleMove(position)){
+
+            setTimeout(()=>{
+                alert("O jogo Acabou - O vencedor foi " + playerTime);
+              
+        }, 10);
+    
+    
         updatePecas();
     }
 
@@ -26,5 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if(symbol != ''){
                 pecas.innerHTML = '<div class="${symbol}"></div>'
             }
-        })
+        });
     }
+}
+
+
